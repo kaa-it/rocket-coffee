@@ -1,0 +1,15 @@
+:root {
+    --background: #fff;
+    --background-color: #fff;
+    --text: #222;
+    --border-default: 1px solid;
+    --font-sm: 12px;
+    --spacing-sm: 4px;
+    --spacing-xlarge: 48px;
+    --shadow-default: 10px 9px 33px -17px rgba(0, 0, 0, 0.75);
+    --radius-default: 8px;
+    --primary: black;
+    --spacing-medium: 8px;
+    --spacing-large: 24px;
+    --light: #ededed;
+}

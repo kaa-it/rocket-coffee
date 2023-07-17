@@ -1,0 +1,29 @@
+@import "../../../theme.css";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--primary);
+    padding: var(--spacing-medium);
+    margin: var(--spacing-large);
+    border: var(--border-default);
+    border-color: var(--light);
+    border-radius: var(--radius-default);
+    box-shadow: var(--shadow-default);
+    max-width: 320px;
+}
+
+.card button {
+    background-color: #0a84ff;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.card small::before {
+    content: "$";
+}
+
+.sale {
+    background-color: #e876fe;
+}
