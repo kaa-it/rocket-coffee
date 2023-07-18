@@ -1,0 +1,23 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import ProductListItem from "./ProductListItem";
+import {Standard} from "./ProductListItem.stories";
+
+<Meta title="patterns/ProductListItem2" component={ProductListItem} />
+
+# ProductListItem
+
+This is the **ProductListItem** component. The intent of the **ProductListItem** is to show one product in the list.
+
+<Standard />
+
+_This is a product list item outside of the Storybook Canvas_
+
+## More documentation
+
+<Canvas>
+    <Story name="standard">
+        <Standard />
+    </Story>
+</Canvas>
+
+Other markdown like [Links](http://www.google.com) work also!

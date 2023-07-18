@@ -1,3 +1,4 @@
+import "../src/index.css";
 import "../src/theme.css";
 
 /** @type { import('@storybook/react').Preview } */

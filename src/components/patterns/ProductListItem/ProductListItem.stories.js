@@ -6,6 +6,16 @@ import ProductListItem from "./ProductListItem";
 export default {
     title: "patterns/ProductListItem",
     decorators: [withKnobs],
+    component: ProductListItem,
+    tags: ['autodocs'],
+    parameters: {
+        docs: {
+            description: {
+                component:
+                    "The **ProductListItem** is the component that show one product in the list.",
+            },
+        },
+    },
 };
 
 export const Standard = ({

@@ -6,6 +6,22 @@ export default function Products() {
         data: [],
         status: statusTypes.loading
     });
+
+    useEffect(() => {
+        const getData = async () => {
+            try {
+                const productFetch = await fetch('/api/products');
+                const productResponse = await productFetch.json();
+                setProductState({data: productResponse.data, status: statusTypes.loaded});
+            } catch (ex) {
+                console.error(ex);
+                setProductState({data: [], status: statusTypes.errored});
+            }
+        }
+
+        getData();
+    }, []);
+
     return <ProductList
         data={productState.data}
         status={productState.status}
